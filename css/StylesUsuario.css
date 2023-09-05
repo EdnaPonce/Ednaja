@@ -1,0 +1,774 @@
+                     /**Globales**/
+
+          /**Plantilla**/
+
+:root{
+    --blanco:  #ffffff;
+    --oscuro:  #ffffff;
+    --primario: #ffffff;
+    --secundario: #5b75f3;
+    --claro: #ffffff;
+    --gris: #ffffff;
+
+    --Fuente-Principal: 'Hind Siliguri', sans-serif;
+    --fuenteHeading: 'PT Sans', sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, #ffffff 0%, var(--claro)); /*Para el color de fondo*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h1,h2,h3{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+
+body{
+    font-size: 2rem;
+    font-family: var(--fuenteHeading);
+    line-height: 1.5; /*Este es el interlineado*/
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    width: min(90% , 120rem);
+    margin: 0 auto;/*Centrar el contenido horizontalmente en la pantalla*/
+}
+
+                    /**Utilidades**/
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.correo{
+    background-color: var(--secundario);
+    font-size: 2rem;
+    text-align:right;
+    font-weight: bold;
+    padding: 0rem 4rem 0rem 0rem;
+    color: var(--blanco);
+    font-style: italic;
+    margin: 0%;
+}
+
+
+        
+
+                     /**Navegacion Principal**/
+
+.contenedor{
+    max-width: 120rem;
+}            
+
+.nav-bg{
+    background-color: var(--secundario);
+    border-bottom: 1px solid var(--gris);
+    position: sticky;
+    top: 0;
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+
+@media (min-width: 375px) {
+    .navegacion-principal{
+        flex-direction:  column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    display: block;
+    padding: 0rem 1.3rem 0rem 1.3rem;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.navegacion-principal a:hover{
+    color: var(--blanco);
+    transform: scale(1.2);
+}
+
+.menu_horizontal{
+    list-style: none;
+}
+
+.navegacion-principal .nav__izquierda a {
+    width: 150px;
+    background: none;
+}
+
+.menu_vertical{
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 15rem;
+    background-color: var(--primario);
+    padding: 10px;
+}
+  
+.nav__derecha li:hover .menu_vertical{
+    display: block;
+}
+
+.menu_vertical li:hover{
+    background-color: var(--gris);
+}
+
+.menu_vertical li a{
+    display: block;
+    color: var(--blanco);
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.nav__derecha {
+  display: flex;
+  align-items: center;
+}
+
+.menu_horizontal,
+.menu_horizontal li {
+  display: inline-block;
+}
+
+.menu_horizontal li {
+  margin-right: 10px;
+}
+
+.menu_horizontal a {
+  text-decoration: none;
+}
+
+.login_circular{
+    background-color: var(--primario);
+    border-radius: 10%;
+    display: inline-block;
+    padding: 10px;
+}
+
+/**Contendio__hero**/
+
+.hero h2{
+    color: var(--oscuro);
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero{
+        background-image: url(../img/Home.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 40rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .hero h2{
+        padding-top: 9rem;
+        padding-left: 7rem;
+        text-align: left;
+        color: var(--blanco);
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1180px) {
+    .hero{
+        background-image: url(../img/Home.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .hero h2{
+        padding-top: 9rem;
+        padding-left: 10rem;
+        text-align: left;
+        color: var(--blanco);
+        font-size: 4rem;
+    }
+}
+                /**Home**/
+
+
+    /**Diferente tipo de letra**/
+
+            
+
+        /**Descripcion**/
+
+.descripciones{
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+    margin: 3rem;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .descripciones{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr); /*Para tamanio y dividir las columnas y los fr es lo mismo que decir 33.3% a cada una y el repeat es para que te lo repita tres veces*/
+    }
+}
+
+.descripcion .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;/*Para si tienes la altura y el ancho que se haga un circulo*/
+    display: flex;
+    justify-content: space-evenly; /* Para alinear el contenido al centro*/
+    align-items: center; /*Para centrar los iconos*/
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcion h3{
+    color: var(--secundario);
+    font-weight: normal; /*Para la negrita de la letra*/
+}
+
+.descripcion p{
+    line-height: 2; /*Para cambiar el internileado*/
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+   
+
+.sombra{
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 5rem auto 5rem auto;
+}
+    
+                    /**Productos**/
+
+
+.producto{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+@media (min-width: 768px) {
+    .producto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.producto:last-of-type{
+    border: none;
+}
+
+.producto a{
+    text-decoration: none;
+}
+
+.producto__bold{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+
+.producto__label,
+.producto__precio{
+    font-weight: normal;
+}
+
+.producto__label,
+.producto__info{
+    font-size: 2rem;
+}
+
+
+                /**Ubicacion**/
+
+.ubicacion{
+    width: 100%;
+    background-size: cover;/*Para que cubra todo el espacio disponible*/
+    background-repeat: no-repeat;/*No repita la imagen*/
+    background-position: center center;/*Es para que fluya la imagen dos center por que tienes que centrar verticalmente y horizontalmente*/
+}
+
+                /**Registro y Login**/
+
+            /**Formularios**/
+
+.login,
+.Registro{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);   
+}
+
+@media (min-width: 1148px) {
+    .login,
+    .Registro{
+        grid-template-columns: repeat(2 , 1fr);   
+    }
+}
+
+.auto__imagen--registro{
+    margin: auto;
+}
+
+.auto__imagen--login{
+    margin: 3.5rem 0;
+}
+
+.auto__imagen--registro,
+.auto__imagen--login{
+    background-size: cover;/*Para que cubra todo el espacio disponible*/
+    background-repeat: no-repeat;/*No repita la imagen*/
+    background-position: center center;/*Es para que fluya la imagen dos center por que tienes que centrar verticalmente y horizontalmente*/
+    box-shadow: 0px 5px 15px 0px rgba(255, 255, 255, 0.48);
+}
+
+@media (min-width: 1148px) {
+    .auto__imagen--registro,
+    .auto__imagen--login{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5rem;
+    }
+}
+
+.formulario_registro{
+    background-color: var(--oscuro);
+    width: min(35rem , 100%);
+    margin: auto;
+    padding: 2rem 2rem 8rem 2rem;
+    height: 90%;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);     
+}
+
+@media (min-width: 768px) {
+    .formulario_registro{
+        width: min(40rem , 100%);
+    }  
+}
+
+.formulario__login{
+    background-color: var(--oscuro);
+    width: min(30rem , 100%);
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+}
+
+@media (min-width: 768px) {
+    .formulario__login{
+        width: min(40rem , 100%);
+        margin: auto;
+    }    
+}
+
+.formulario__login fieldset,
+.formulario_registro fieldset{
+    border: none;
+}
+
+.formulario__login Legend,
+.formulario_registro legend{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blanco);
+}
+
+.campo{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.campo_contraseña a{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.contraseña_link{
+    text-align: center;
+    color: var(--blanco);
+}
+
+.campo_registrarse{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.campo_registrarse h3{
+    font-size: 1.5rem;
+    color: var(--blanco);
+    font-weight: normal;
+    text-align: start;
+    margin: 0%;
+}
+
+.campo_registrarse a{
+    font-size: 1.5rem;
+    color: var(--blanco);
+    font-weight: normal;
+    text-align: start;
+}
+
+                    /**Selectores**/
+
+.input-text{
+    text-align:unset;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.input-cantidad{
+    text-align:unset;
+    width: auto;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+
+                 /**Utilidades (Buttom)**/
+
+.button_move--Login{
+    width: 100%;
+}
+
+.button{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 1rem 0rem 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .button{
+        margin: 1rem 0rem 1rem 1rem;
+    }
+}
+
+.remover{
+    background-color: #1a4efa;
+    color: var(--blanco);
+    padding: 1rem 0.3rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    border: none;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .remover{
+        padding: 1rem 2rem;
+        margin: 1rem 0rem 1rem 1rem;
+    }
+}
+
+.button:hover{
+    background-color: var(--gris);
+    color: var(--blanco);
+    cursor: pointer;
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);     
+}
+
+.flex{
+    display: flex;
+}
+
+.alinear-derecha{
+    justify-content: flex-end;
+}
+
+                    /**Footer**/
+
+.footer {
+  background-color: var(--secundario);
+  padding: 2rem;
+  color: var(--blanco);
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__column {
+  flex: 1 1 30rem;
+  margin-bottom: 2rem;
+}
+
+.footer__column h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer__column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer__column ul li {
+  margin-bottom: 0.5;
+}
+
+.footer__column ul li a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+.footer__centro{
+    text-align: center;
+    line-height: 5rem;
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+                            /**Administrador**/
+   
+    /*Login de Administrador*/   
+
+.login_administrador{
+    background-color: var(--oscuro);
+    width: min(40rem , 100%);
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+}  
+
+.login_administrador fieldset{
+    border: none;
+}
+
+.login_administrador Legend{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blanco);
+}                         
+
+.formulario__usuario{
+    background-color: var(--oscuro);
+    width: min(70rem , 100%);
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+}  
+
+.formulario__usuario fieldset{
+    border: none;
+}
+
+.formulario__usuario Legend{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blanco);
+}
+
+table{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.2rem solid black;
+    padding: 0.5rem;
+    border-collapse:separate;
+    empty-cells:hide;
+    border-spacing: 1rem;
+}
+
+th{
+    border-bottom: 0.2rem solid black;
+    empty-cells:hide;
+    caption-side: bottom;
+    font-size: 1.5rem;
+}
+
+td{
+    text-align: center;
+    padding: 1rem 0.3rem;
+    caption-side: bottom;
+    font-size: 1.2rem;
+}
+
+
+@media (min-width: 768px) {
+    table{
+        padding: 2rem;
+        border-collapse:separate;
+    }
+    
+    th{
+        font-size: 2.5rem;
+    }
+    
+    td{
+        padding: 1rem 1rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .responsive-hide {
+        display: none;
+    }
+}
+
+
+.grid_right{    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.grid_right h3, h4{    
+    margin-right: 6rem;
+}
+
+.grid_right input{
+    margin-right: 2rem;
+}
+
+.grid_right h3{
+    font-size: 2.8rem;
+    border-bottom: 1px solid var(--gris);
+}
+
+.grid_right span{
+    font-weight: normal;
+}
+
+@media (min-width: 768px) {
+    .grid_right{    
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    
+    .grid_right h3, h4{    
+        margin-right: 12rem;
+    }
+    
+    .grid_right input{
+        margin-right: 2rem;
+    }
+    
+    .grid_right h3{
+        border-bottom: 1px solid var(--gris);
+    }
+    
+    .grid_right span{
+        font-weight: normal;
+    }
+}
+
+.button-space{
+    column-gap: 3rem;
+}
+
+/*Comprar*/
+
+.negrita{
+    font-weight: bold;
+}
+
+.grid_productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i|Open+Sans:400,700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Kaushan+Script&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link rel="stylesheet" href="../css/StylesUsuario.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <nav class="menu">
+        <a href="../html/Home.html">Home</a>
+        <a href="../html/Registro.html">Registrarse</a>
+        <a href="../html/Login.html">Iniciar sesion</a>
+        <a href="../html/Ubicacion.html">Ubicacion</a>
+        <a href="../php/Honda.php">Productos</a>
+        
+    </nav>
+       
+    <div class="body_1">
+            <!--            <a href="https://unsplash.com/@alonly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"></a><a href="https://unsplash.com/es/fotos/fP1jFz9FYuI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"></a>-->
+           
+           
+            <form class="formulario__login" method="post" action="/Proyecto Final/php/Login.php">
+                <h2 class="form__title">Iniciar sesion</h2>
+                <p class="form__paragraph">Aun no tienes cuenta?<a href="Registro.html" class="form__link">Entra aqui</a></p>
+                
+               
+                    <legend>Iniciar Sesión</legend>
+        
+                    <div class="form__group">
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" name="correo" placeholder="Correo">
+                        </div>
+        
+                        <div class="campo">
+                            <label>Contraseña</label>
+                            <input class="input-text" type="password" name="password" placeholder="Contraseña">
+                        </div>
+
+                        <div class="alinear-derecha flex">
+                            <button class="button button_move--Login" class="input-text" type="submit" name="login" value="Iniciar Sesión">Iniciar Sesión</button>
+                        </div>
+
+                        
+                      
+
+                    </div>
+               
+            </form>
+        </div>
+    
+
+   
+
+    
+
+
+
+</body>
+</html>

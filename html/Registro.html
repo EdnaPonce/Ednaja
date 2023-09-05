@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Kaushan+Script&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="../css/StylesUsuario.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/StylesUsuario.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+
+   
+    <nav class="menu">
+        <a href="../html/Home.html">Home</a>
+        <a href="../html/Registro.html">Registrarse</a>
+        <a href="../html/Login.html">Iniciar sesion</a>
+        <a href="../html/Ubicacion.html">Ubicacion</a>
+        <a href="../php/Honda.php">Productos</a>
+        
+    </nav>
+       
+
+
+       
+        <div class="body_1">
+           
+            <!--Foto de <a href="https://unsplash.com/@lrscarpino?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luke Scarpino</a> en <a href="https://unsplash.com/es/fotos/-W3XAnu1Ih4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+
+            <form class="formulario_registro" method="POST" action="/Proyecto Final/php/Registro.php">
+                <fieldset>
+                    <h2 class="form__title">Registrese para crear una cuenta</h2>
+        
+
+                    <div class="contenedor-campos">
+                        <disv class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input class="input-text" type="text" name="nombre" id="nombre" type="text" placeholder="Nombre">
+                        </disv>
+        
+                        <div class="campo">
+                            <label for="correo">Correo</label>
+                            <input class="input-text" type="email" name="correo" id="correo"  type="text" placeholder="Correo">
+                        </div>
+        
+                        <div class="campo">
+                            <label for="contrasena">Contraseña</label>
+                            <input class="input-text" type="password" name="password" id="password" type="text" placeholder="password">
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefono">Teléfono</label>
+                            <input class="input-text" type="number" name="telefono"  id="telefono" type="text" placeholder="Teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label for="Edad">Edad</label>
+                            <input class="input-text" type="number" name="Edad" id="Edad" type="text" placeholder="Edad">
+                        </div>
+
+                        <div class="campo">
+                            <label for="Pais">Pais</label>
+                            <input class="input-text" type="text" name="Pais"  id="telefono" type="text" placeholder="Pais">
+                        </div>
+
+                        <div class="alinear-derecha flex">
+                            <button class="button button_move" class="input-text" type="submit" name="Registro" value="Crear Cuenta">Crear Cuenta</button>
+                        </div>
+
+                        <div class="campo_registrarse">
+                            <h3>¿Tienes una cuenta?</h3>
+                            <a class="Login_link" href="Login.html">Ingresar</a>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    
+    
+ 
+
+</body>
+</html>

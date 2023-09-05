@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Kaushan+Script&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="../css/StylesUsuario.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+
+</head>
+
+<body>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <section class="nav__izquierda">
+                <ul class="menu_horizontal">
+                    <li>
+                        <a href="..html/Home.html">
+                            <img src="../icon/SpeedWheels (1).jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="nav__derecha">
+                <ul class="menu_horizontal">
+                    <li><a href="">Productos v </a>
+                        <ul class="menu_vertical">
+                            <li><a href="../php/Honda.php">Honda</a></li>
+                            <li><a href="../php/Nissan.php">Nissan</a></li>
+                            <li><a href="../php/Ford.php">Ford</a></li>
+                            <li><a href="../php/Chevrolet.php">Chevrolet</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/Ubicacion.html">Ubicación</a></li>
+                    <li><a href="../html/Registro.html"><span class="login_circular">Sing up</span></a></li>
+                    <li><a href="../html/Login.html"><span class="login_circular">Log in</span></a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    
+    <main class="Contenido">
+
+        <h2 class="centrar-texto">Login Administrador</h2>
+       
+        <div>  
+            <form class="login_administrador" method="post" action="../administrador/LoginAdministrador.php">
+                <fieldset>
+                    <legend>Iniciar Sesión</legend>
+        
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" name="correo" placeholder="Correo">
+                        </div>
+        
+                        <div class="campo">
+                            <label>Contraseña</label>
+                            <input class="input-text" type="password" name="password" placeholder="Contraseña">
+                        </div>
+
+                        <div class="alinear-derecha flex">
+                            <button class="button button_move--Login" class="input-text" type="submit" name="login" value="Iniciar Sesión">Iniciar Sesión</button>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="text__footer">Todos los Derechos reservados para The Cars</p>
+    </footer>
+
+</body>
+</html>
