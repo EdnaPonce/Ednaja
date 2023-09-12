@@ -4,8 +4,8 @@
 
 $server="localhost";
 $database= "maquinasalegria";
-$username= "root";
-$password="";
+$username= "ponce";
+$password="12345";
 
 //Aqui se traen las variables para poderlas enviar
 
