@@ -2,7 +2,7 @@
 
 //Estas son las variables para conectar a tu base de datos
 
-$server="localhost";
+$server="maquinasalegria";
 $database= "VentaAutomoviles";
 $username= "root";
 $password="";
